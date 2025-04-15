@@ -153,35 +153,3 @@ Example Response:
 ```
 
 Use this token to authenticate other API requests by including it in the Authorization header.
-
-1. How many hours did you spend on the challenge?
-   I spent about 7 hours on the challenge.
-
-2. What improvements or enhancements would you implement if you had more time?
-   If I had more time, I would consider adding more user account CRUD functionalities to make the application more complete and flexible.
-
-3. Which parts of your work are you most proud of?
-   I’m most proud of how I structured the project. I made it modular and easy to navigate, which I believe makes it easier for other developers to understand and maintain the codebase.
-
-4. Which parts of the challenge did you spend the most time on? What did you find most difficult?
-   The most time-consuming part was getting MSSQL to work. Unfortunately, it didn’t work in the end due to some corrupted files that required a clean wipe, so I decided to switch to MySQL instead.
-   The most difficult part was interpreting some of the technical requirements. For example, the challenge mentioned DELETE/university/{id} to delete a specific university, but the model also included a DeletedAt and isActive field. This made me question whether a soft delete (by setting the DeletedAt timestamp and toggle isActive to 1) was expected instead of a hard delete that removes the row entirely.
-
-5. Did you use any libraries for the challenge? What are they used for? Why did you choose these libraries and not the alternatives?
-   Yes, I used the following libraries:
-   express: for setting up the web server and routes.
-   dotenv: to manage environment variables securely.
-   bcryptjs: for hashing passwords.
-   jsonwebtoken: for handling token-based authentication.
-   mysql2: for interacting with the MySQL database after MSSQL issues.
-
-I chose these libraries based on familiarity. They are well-documented, and widely used in the Node.js ecosystem.
-
-6. What do you think of the challenge overall?
-   I thought the challenge was engaging and gave a good balance of backend implementation and real-world decision-making. It tested not just coding ability but also how to interpret and adapt to changing requirements.
-
-7. How can we improve the challenge? We would love to hear them.
-   It would be helpful to clarify certain parts of the requirements. For instance, making it explicit whether soft deletes or hard deletes are expected when a model includes a DeletedAt and isActive field.
-
-8. Any other thoughts that you wish to share with us?
-   Overall, I enjoyed working on the challenge! It was a great opportunity to demonstrate how I approach project structure, problem-solving, and adapting to technical issues. Thanks for the opportunity.
